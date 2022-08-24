@@ -48,11 +48,11 @@ export default function post() {
   return (
     <div>
         <h1 className="my-5 text-center text-capitalize">สมัครข้อมูล</h1>
-        <input type="text" className="form-control" placeholder="นามสกุล" onChange={(e) => { setEmployee_name(e.target.value) }}/>
+        <input type="text" className="form-control" placeholder="ชื่อ" onChange={(e) => { setEmployee_name(e.target.value) }}/>
         <br />
-        <input type="text" className="form-control" placeholder="ชื่อผู้ใช้" onChange={(e) => { setEmployee_username(e.target.value) }}/>
+        <input type="text" className="form-control" placeholder="Username" onChange={(e) => { setEmployee_username(e.target.value) }}/>
         <br />
-        <input type="text" className="form-control" placeholder="รหัสผ่าน" onChange={(e) => { setEmployee_password(e.target.value) }}/>
+        <input type="text" className="form-control" placeholder="Password" onChange={(e) => { setEmployee_password(e.target.value) }}/>
         <br />
         <button type="button" className="btn btn-success" onClick={addEmployee}>บันทึก</button>
     </div>
